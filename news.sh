@@ -6,7 +6,7 @@ do
   IFS=$'\n'
     for i in $RSS 
     do 
-    echo $i > /tmp/rss.feed
+    echo -ne "$i | " > /tmp/rss.feed
     sleep 11s
   done
   sleep 100s
